@@ -18,8 +18,7 @@ buildPythonPackage rec {
   src = fetchFromGitLab {
     owner = "klikini";
     repo = "doorbirdpy";
-    # https://gitlab.com/klikini/doorbirdpy/-/issues/8
-    rev = "eb32d7b5d7832565172382f98458c2dd409f1886";
+    rev = "refs/tags/${version}";
     hash = "sha256-UayXJhfiiwB2aXCa5V1U/LnNiV7KX4lpIG9hNG6iCm0=";
   };
 
